@@ -38,16 +38,16 @@ namespace AutomationICTest
         public void Test1()
         {
 
-            login.Login();
+            login.Login(driver);
     //Asserting for Profile Name.
-            profile.Profile();
+            profile.Profile(driver);
      //Creating Customer
-             customer.Customer();
+             customer.Customer(driver);
      //Creating Jobs
-            jobs.Jobs();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(100);
+            jobs.Jobs(driver);
+      //      driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(100);
      //jobs Calender
-            jobscal.Jobscal();
+            jobscal.Jobscal(driver);
 
 
         }

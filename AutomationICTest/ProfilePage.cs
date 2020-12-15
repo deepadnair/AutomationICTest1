@@ -5,8 +5,8 @@ namespace AutomationICTest
 {
    public class ProfilePage
     {
-        IWebDriver driver;
-        public void Profile()
+
+        public void Profile(IWebDriver driver)
         {
             var username = driver.FindElements(By.CssSelector("a[data-toggle=dropdown]"))[1].Text;
             Assert.AreEqual(username, "Hello hari!");

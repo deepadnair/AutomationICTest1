@@ -4,13 +4,13 @@ namespace AutomationICTest
 {
     public class CustomerPage
     {
-        IWebDriver driver;
-        public void Customer()
+
+        public void Customer(IWebDriver driver)
         {
         driver.FindElements(By.CssSelector("a[data-toggle]"))[0].Click();
             driver.FindElement(By.XPath("//a[contains(text(),'Customers')]")).Click();
-            driver.FindElement(By.CssSelector("p a[class=btn btn-primary]")).Click();
-            // driver.FindElement(By.XPath("//a[contains(text(),'Create New')]")).Click();
+          //  driver.FindElement(By.CssSelector("p a[class=btn btn-primary]")).Click();
+            driver.FindElement(By.XPath("//a[contains(text(),'Create New')]")).Click();
             driver.FindElement(By.CssSelector("input [id=Name]")).SendKeys("HariK");
             // driver.FindElements(By.XPath("//input[@id='Name']"));
             driver.FindElement(By.CssSelector("button [id=EditContactButton]")).Click();

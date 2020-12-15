@@ -4,8 +4,8 @@ namespace AutomationICTest
 {
     public class JobscalPage
     {
-        IWebDriver driver;
-        public void Jobscal()
+        
+        public void Jobscal(IWebDriver driver)
         {
 
             driver.FindElement(By.XPath("//a[contains(text(),'Jobs Calendar')]")).Click();

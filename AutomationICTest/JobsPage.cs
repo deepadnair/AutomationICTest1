@@ -5,8 +5,8 @@ namespace AutomationICTest
 {
     public class JobsPage
     {
-        IWebDriver driver;
-       public void Jobs()
+        
+       public void Jobs(IWebDriver driver)
     {
       driver.FindElement(By.XPath("//a[contains(text(),'Jobs')]")).Click();
        // driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[2]/a")).Click();
